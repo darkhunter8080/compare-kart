@@ -1,0 +1,39 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat&family=Poppins&display=swap");
+
+h1 {
+    font-size: calc(1.5vw + 1.5vh);
+    font-weight: 2000;
+    font-family: 'Bruno Ace SC', cursive;
+    text-decoration: solid;
+    letter-spacing: 0.1vw;
+}
+
+h2 {
+    padding-left: 2vw;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+h3 {
+    font-size: calc(0.8vw + 0.8vh);
+    padding-left: 2vw;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1.about_title {
+    font-size: calc(1.4vw + 1.4vh);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-weight: bold;
+    padding-left: 0;
+}
+
+.about_us_middle {
+    padding-left: 2vw;
+}
+
+p.get_started {
+    font-size: calc(1.3vw + 1.3vh);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}

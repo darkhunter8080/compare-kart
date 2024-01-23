@@ -1,0 +1,91 @@
+<!-- scrapedData.ejs -->
+<!-- <!DOCTYPE html>
+<html>
+
+<head> -->
+<link rel="stylesheet" type="text/css" href="/scraped.css">
+<%- include('partials/header'); -%>
+    <title>Scraped Data</title>
+    </head>
+
+    <!-- <body> -->
+    <h2>Flipkart prices:</h2>
+    <!-- <section class="container">
+        <% products1.slice(0, 3).forEach((product)=> { %>
+            <div class="cards">
+                <a href="<%= product.product_link %>">
+                    <div class="product_images">
+                        <img src="<%= product.image_link %>" alt="Product Image">
+                    </div>
+                    <div class="intro">
+                        <h2>
+                            <%= product.name %>
+                        </h2>
+                        <p>
+                            <%= product.price %>
+                        </p>
+                        <p class="image_descreption">
+                            <%= product.specification %>
+                        </p>
+                        <strong class="card-rating">Rating:</strong>
+                        <%= product.rating %><br>
+                    </div>
+                </a>
+            </div>
+            <% }); %>
+    </section> -->
+    <section class="container">
+        <% products1.slice(4, 7).forEach((product)=> { %>
+            <div class="cards">
+                <a href="<%= product.product_link %>">
+                    <div class="" product_images"">
+                        <img src="<%= product.image_link %>" alt="Product Image">
+                    </div>
+                    <div class="intro">
+                        <h3>
+                            <%= product.name %>
+                        </h3>
+                        <p>
+                            <%= product.price %>
+                        </p>
+                        <p class="image_descreption">
+                            <%= product.specification %>
+                        </p>
+                        <strong ">Rating:</strong>
+                        <%= product.rating %><br>
+                    </div>
+                </a>
+            </div>
+            <% }); %>
+        </section>
+
+    <h2>eBay prices:</h2>
+    <section class=" container">
+                            <% products2.slice(1, 4).forEach((product)=> { %>
+                                <div class="cards">
+                                    <a href="<%= product.product_link %>">
+                                        <div class="" product_images"">
+                                            <img src="<%= product.image_link %>" alt="Product Image">
+                                        </div>
+                                        <div class="intro">
+                                            <h3>
+                                                <%= product.name %>
+                                            </h3>
+                                            <p>
+                                                <%= product.price %>
+                                            </p>
+                                            <p class="image_descreption">
+                                                <%= product.specification %>
+                                            </p>
+                                            <strong ">Rating:</strong>
+                        <%= product.rating %><br>
+                    </div>
+                </a>
+            </div>
+            <% }); %>
+        </section>
+
+        <%- include('partials/footer.ejs'); -%>
+<!-- </body>
+
+</html>

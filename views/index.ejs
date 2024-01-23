@@ -1,0 +1,100 @@
+<%- include('partials/header'); -%>
+
+
+    <div class="middle">
+        <div class="middle_tagline">
+            <p class="tagline">Compare with us, we’ll make it worth your while.</p>
+            <p class="descreption">At CompareKart you can compare prices of various products from different shops.</p>
+        </div>
+        <div class="search_form">
+            <form role="search" action="/" method="post" class="search_actions">
+                <label for="search">Search for stuff</label>
+                <input id="search" type="search" name="product_name" placeholder="Search any product . . ." />
+                <button class="button-search" type="submit">Go</button>
+            </form>
+            <!-- <form action="/" method="post">
+                <label for="search">Search for stuff</label>
+                <input id="search" type="search" name="product_name" placeholder="Search any product . . .">
+                <button type="submit">Go</button>
+            </form> -->
+        </div>
+    </div>
+    <section class="container">
+        <div class="cards">
+            <a
+                href="https://www.amazon.in/Apple-MacBook-Laptop-10%E2%80%91core-16%E2%80%91core/dp/B0BSHHL4TY/ref=sr_1_7?keywords=latest+macbook&qid=1688116535&sprefix=latest+mac%2Caps%2C261&sr=8-7">
+                <div class="product_images">
+                    <img src="https://m.media-amazon.com/images/I/61LNGJEMh0L._SX679_.jpg" alt="Laptop">
+                </div>
+                <div class="intro">
+                    <h3>Apple 2023 MacBook Pro </h3>
+                    <p>₹1,99,900</p>
+                    <p class="image_descreption">Laptop M2 Pro chip with 10‑core CPU and 16‑core
+                        GPU: 33.74 cm (14.2-inch), 16GB Unified Memory, 512GB SSD Storagey</p>
+                </div>
+            </a>
+        </div>
+        <div class="cards">
+            <a
+                href="https://www.amazon.in/OnePlus-Sonic-Black-256GB-Storage/dp/B0BSNNWX8R/ref=sr_1_4?crid=QW8RWBIOC6V1&keywords=oneplus&qid=1688479033&sprefix=oneplus%2Caps%2C315&sr=8-4">
+                <div class="product_images">
+                    <img src="https://m.media-amazon.com/images/I/41g1pQr8xUL._SX300_SY300_QL70_FMwebp_.jpg"
+                        alt="Mobile">
+                </div>
+                <div class="intro">
+                    <h3>OnePlus 11R 5G </h3>
+                    <p class="image_descreption">Sonic Black, 16GB RAM, 256GB Storage)</p>
+                </div>
+            </a>
+        </div>
+        <div class="cards">
+            <a href="">
+                <div class="product_images">
+                    <img src="https://m.media-amazon.com/images/I/71VbHaAqbML._SL1500_.jpg" alt="Tablet">
+                </div>
+                <div class="intro">
+                    <h3>iPad Air M1</h3>
+                    <p class="image_descreption">
+                        Apple 2022 iPad Air M1 Chip (10.9-inch/27.69 cm, Wi-Fi, 64GB) - Blue (5th Generation)</p>
+                </div>
+            </a>
+        </div>
+        <div class="cards">
+            <a href="">
+                <div class="product_images">
+                    <img src="Images/Earphone.jpeg" alt="Earphone">
+                </div>
+                <div class="intro">
+                    <h3>Earphones</h3>
+                    <p class="image_descreption">Lorem ipsum is placeholder text commonly used in the graphic, print,
+                        and publishing industries for previewing layouts and visual mockups.</p>
+                </div>
+            </a>
+        </div>
+        <div class="cards">
+            <a href="">
+                <div class="product_images">
+                    <img src="Images/Watch.jpg" alt="Watch">
+                </div>
+                <div class="intro">
+                    <h3> Smart Watches</h3>
+                    <p class="image_descreption">Lorem ipsum is placeholder text commonly used in the graphic, print,
+                        and publishing industries for previewing layouts and visual mockups.</p>
+                </div>
+            </a>
+        </div>
+        <div class="cards">
+            <a href="">
+                <div class="product_images">
+                    <img src="Images/ps5.jpg" alt="Video Games">
+                </div>
+                <div class="intro">
+                    <h3>Video Games</h3>
+                    <p class="image_descreption">Lorem ipsum is placeholder text commonly used in the graphic, print,
+                        and publishing industries for previewing layouts and visual mockups.</p>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <%- include('partials/footer.ejs'); -%>

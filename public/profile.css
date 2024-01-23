@@ -1,0 +1,70 @@
+.profile-container {
+    margin-top: 0;
+    position: relative;
+    display: inline-block;
+}
+
+.profile-image {
+    /* background-image: url("../profile.png"); */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: inherit;
+    /* width: auto; */
+    border-radius: 50%;
+    width: 2vw;
+    height: auto;
+    /* height: calc(0.5vw + 3vh); */
+}
+
+.user-profile-card {
+    position: absolute;
+    top: calc(100% + 5px);
+    /* Adjust the distance from the profile image */
+    right: 5px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    display: none;
+    padding: 10px;
+    z-index: 1;
+    /* Add this line */
+}
+
+.popup-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    /* Add this line */
+    z-index: 2;
+    /* Add this line */
+}
+
+.popup-menu li {
+    padding: 5px 0;
+}
+
+.popup-menu li a {
+    color: #333;
+    text-decoration: none;
+}
+
+.popup-menu li a:hover {
+    text-decoration: underline;
+}
+
+.profile-card {
+    font-size: calc(0.7vw + 0.7vh);
+    padding-left: 5px;
+    font-family: 'Poppins', sans-serif;
+    /* font-weight: 1000; */
+    margin: 0;
+}
+
+.profile-card h4 {
+    margin: 0 0 5px;
+}
+
+.profile-card p {
+    margin: 0;
+}

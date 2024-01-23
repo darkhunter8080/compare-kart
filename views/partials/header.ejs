@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="shortcut icon" href="Images/Logo.jpg" type="image/x-icon">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="javascript" href="JS/action.js">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agdasima&family=Fira+Sans+Condensed:wght@200&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Agdasima&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Tangerine&family=Tilt+Prism&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Righteous&family=Yanone+Kaffeesatz&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+        integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <title>CompareKart</title>
+    <link rel="stylesheet" href="/profile.css">
+</head>
+
+<body>
+    <section class="header">
+        <div class="logo">
+            <h1><a href="/">CompareKart</a></h1>
+        </div>
+        <div class="navigation">
+            <div>
+                <p class="head"><a href="/about">AboutUs</a></p>
+            </div>
+            <div>
+                <p class="head"><a href="">Contact</a></p>
+            </div>
+            <div>
+                <% if (isAuthenticated) { %>
+                    <!-- User profile button -->
+                    <!-- <div class="profile-container">
+                        <button class="user-icon-button" onclick="toggleUserProfile()">
+                            <img class="profile-image" src="../profile.png" alt="Profile Photo">
+                        </button>
+                    </div>
+                    <div class="popup-container">
+                        <div id="user-profile" class="user-profile-card" style="display: none;">
+
+                            <ul class="popup-menu">
+                                <li><a href="/user-profile">User Profile</a></li>
+                                <li><span>Welcome, <%= user.username %></span></li>
+                                <li><span><span>Email: <%= user.email %></span></span></li>
+                                <li><a href="/log-out">log out</a></li>
+                            </ul>
+                        </div>
+                    </div> -->
+                    <div class="profile-container">
+                        <button class="user-icon-button" onclick="toggleUserProfile()">
+                            <div class="profile-image"></div>
+                            <img class="profile-image" src="../profile.png" alt="Profile Photo">
+                        </button>
+                        <div id="user-profile" class="user-profile-card">
+                            <div class="popup-menu">
+                                <div class="profile-card">
+                                    <h4>User Profile</h4>
+                                    <p>Welcome, <%= user.username %>
+                                    </p>
+                                    <p>Email: <%= user.email %>
+                                    </p>
+                                    <a href="/log-out">Log Out</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+            </div>
+
+            <!-- <div class="profile-container" onclick="toggleUserProfile()">
+                        <img class="profile-image" src="../profile.jpg" alt="Profile Image">
+                        <div class="popup-container">
+                            <div class="popup-arrow"></div>
+                            <ul class="popup-menu">
+                                <li><a href="/user-profile">User Profile</a></li>
+                                <li><span>Welcome, <%= user.username %></span></li>
+                                <li><span><span>Email: <%= user.email %></span></span></li>
+                                 Other menu items 
+                                <li><a href="/log-out">log out</a></li>
+                            </ul>
+                        </div>
+                    </div> -->
+            <% } else { %>
+                <!-- Login button -->
+                <form action="/login-page" method="post">
+                    <button class="btnLogin-popup" type="submit">
+                        <p class="login">Login</p>
+                    </button>
+                </form>
+                <% } %>
+        </div>
+        </div>
+    </section>
+    <script>
+        // function toggleUserProfile() {
+        //     const userProfile = document.getElementById('user-profile');
+        //     userProfile.style.display = (userProfile.style.display === 'none') ? 'block' : 'none';
+        // }
+        function toggleUserProfile() {
+            const userProfile = document.getElementById('user-profile');
+            const currentDisplayStyle = window.getComputedStyle(userProfile).getPropertyValue('display');
+
+            if (currentDisplayStyle === 'none') {
+                userProfile.style.display = 'block';
+            } else {
+                userProfile.style.display = 'none';
+            }
+        }
+
+        // Check if the user profile is initially hidden and adjust the display accordingly
+        window.addEventListener('DOMContentLoaded', function () {
+            const userProfile = document.getElementById('user-profile');
+            const currentDisplayStyle = window.getComputedStyle(userProfile).getPropertyValue('display');
+
+            if (currentDisplayStyle === 'none') {
+                userProfile.style.display = 'none';
+            } else {
+                userProfile.style.display = 'block';
+            }
+        });
+
+    </script>
